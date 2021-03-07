@@ -1,4 +1,4 @@
-function! go#testfile#open(afile, mods, bang)
+function! gotestfile#open(afile, mods, bang)
   let l:current_file = expand(a:afile)
   if l:current_file =~# '_test\.go$'
     let l:target_file = l:current_file[0 : -9] .. '.go'
